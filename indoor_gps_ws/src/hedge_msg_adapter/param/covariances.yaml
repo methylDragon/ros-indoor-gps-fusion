@@ -1,0 +1,26 @@
+# roll, pitch, yaw
+# float[9]
+imu_orientation_covariance: [0, 0, 0,
+                             0, 0, 0,
+                             0, 0, 0]
+
+# roll, pitch, yaw
+# float[9]
+imu_angular_velocity_covariance: [0, 0, 0,
+                                  0, 0, 0,
+                                  0, 0, 0]
+
+# x, y, z
+# float[9]
+imu_linear_acceleration_covariance: [0, 0, 0,
+                                     0, 0, 0,
+                                     0, 0, 0]
+
+# x, y, z, roll, pitch, yaw
+# float[36]
+pose_covariance: [0.1404, 0, 0, 0, 0, 0,
+                  0, 0.1404, 0, 0, 0, 0,
+                  0, 0, 0.1404, 0, 0, 0,
+                  0, 0, 0, 0.0004, 0, 0,
+                  0, 0, 0, 0, 0.0004, 0,
+                  0, 0, 0, 0, 0, 0.0004]

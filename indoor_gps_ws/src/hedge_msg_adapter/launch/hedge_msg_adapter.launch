@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="hedge_msg_adapter" type="hedge_msg_adapter" name="hedge_msg_adapter" clear_params="true">
+    <rosparam command="load" file="$(find hedge_msg_adapter)/param/covariances.yaml" />
+  </node>
+</launch>

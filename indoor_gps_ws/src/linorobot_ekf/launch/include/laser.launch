@@ -1,0 +1,14 @@
+<launch>
+    <!-- Run Linorobot compatible laser drivers. Takes reference from env var LINOLIDAR. ie. export LINOLIDAR=xv11 -->
+    <include file="$(find auto_wheelchair)/launch/include/lidar/$(env LINOLIDAR).launch" />
+
+    <!-- Publish static transform of the laser. Define your sensor offset here -->
+    <!-- <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser" args="0.065 0 0.098 0 0 0  /base_link /laser  100"/> -->
+    <node pkg="tf" type="static_transform_publisher" name="base_link_to_laser" args="0.40 0 0.098 0 0 3.14  /base_link /laser  100"/>
+
+    <node pkg="laser_filters" type="scan_to_scan_filter_chain" output="screen" name="laser_filter">
+      <rosparam command="load" file="$(find laser_filters)/filters/laser_shadow_filter.yaml" />
+    </node>
+</launch>
+
+

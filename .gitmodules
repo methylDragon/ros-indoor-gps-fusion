@@ -1,0 +1,3 @@
+[submodule "marvelmind-indoor-gps-tutorial"]
+	path = marvelmind-indoor-gps-tutorial
+	url = https://github.com/methylDragon/marvelmind-indoor-gps-tutorial.git

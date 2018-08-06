@@ -1,4 +1,6 @@
-# ros-indoor-gps-fusion
+# Indoor 'GPS' Fusion with ROS
+
+Check out **indoor_gps_ws** for the implementation!
 
 An implementation of sensor fusion using the extended Kalman Filter (EKF) node from [robot_localization](http://wiki.ros.org/robot_localization) 
 

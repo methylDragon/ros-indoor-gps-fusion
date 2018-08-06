@@ -18,7 +18,7 @@
             |_|_|_\___|\__|_||_\_, |_||___/|_| \__,_\__, \___/_||_|
                                |__/                 |___/
             -------------------------------------------------------
-                           github.com/methylDragon
+                            github.com/methylDragon
 
   Copyright (c) 2018, methylDragon
   All rights reserved.
